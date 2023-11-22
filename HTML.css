@@ -1,45 +1,61 @@
 header {
-    font-family: Lato;
+    font-family: 'Kdam Thmor Pro', sans-serif;
     text-align: center;
     text-decoration:dotted;
     background-color: lightcoral;
     color: darkred;
     padding: 10px;
     font-size: 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
-header img {
-    max-width: 100px;
-}
+
 #WELCOME {
     background-color: #FFBD33; 
     padding: 20px; 
     color: rgb(74, 157, 49);
  }
 
+ #About {
+    background-color: #FFBD33; 
+    padding: 10%; 
+    color: rgb(74, 157, 49);
+ 
+ }
 body {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 16px;
+    background-color: grey;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/04/98/00/48/1000_F_498004866_lrSnYchHLlYABJH7PL7bOngKT8HUrhsD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-family: Impact, Lato;
     text-align: center;
     text-decoration:dotted;
-    font-size: 30px;
+    font-size: 1.5em;
+    padding-left: 30px;
 }
 
 h2 {
     font-family: Impact, Lato;
     text-align: center;
     text-decoration:dotted;
-    font-size: 30px;
+    font-size: 1.5em;
     color: darkred;
+    padding-left: 30px;
 }
 
 h3 {
     font-family: Impact, Lato;
     text-decoration:dotted;
-    font-size: 20px;
+    font-size: 1.5em;
+    padding-left: 30px;
 }
 
 .contact.info h3 {
@@ -55,11 +71,12 @@ ul li {
     margin-right: 20px;
 }
 
-
 .featured-article {
-    background-color: lightblue; 
+    background-color: #fff;; 
     padding: 10px;
     padding-bottom: 5%;
+    font-size: larger;
+    text-align: center;
 }
 
 
@@ -76,9 +93,15 @@ ul li {
     background-color: #555; 
 }
 
+.featured-article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .industry {
-    background-color: #e1cc40; 
-    color: #fff; 
+    background-color: #fff; 
+    color: #e1cc40; 
     padding: 10px;
     padding-bottom: 5%;
 }
@@ -86,14 +109,14 @@ ul li {
 .industry a {
     text-decoration: none; 
     background-color: #333; 
-    color: #625e5e; 
+    color: #fff; 
     padding: 5px 10px; 
     border-radius: 5px; 
     display: inline-block;
 }
 
 .career {
-    background-color:  #e1cc40; 
+    background-color:  #fff; 
     color: #3c3b3b; 
     padding: 10px;
     padding-bottom: 5%;
@@ -101,15 +124,20 @@ ul li {
 
 .career a {
     text-decoration: none; 
-    background-color: #908c8c; 
+    background-color: #333; 
     color: #fff; 
     padding: 5px 10px; 
     border-radius: 5px; 
     display: inline-block;
 }
 
+.career .author {
+    background-color: purple;
+    color: #fff;
+}
+
 .technical {
-    background-color: #a0b54c6e; 
+    background-color: #fff; 
     color: #242222; 
     padding: 10px;
     padding-bottom: 5%;
@@ -124,6 +152,11 @@ ul li {
     display: inline-block;
 }
 
+.technical .author {
+    background-color: #000;
+    color: #fff;
+}
+
 #visitors{
     background-color: #a0b54c6e; 
     color: #242222; 
@@ -133,37 +166,72 @@ ul li {
 }
 
 form {
-    background-color: lightcoral;
+    background-color: yellow;
     color: darkred;
-    padding: 10px;
+    padding: 50px;
+    margin: 20%;
 }
+
 address {
     text-align: right;
     text-decoration:dotted;
+    color:#fff
 }
-
-.contact-form {
-    text-align: center;
-}
-
 
 iframe {
     width: 100%;
-    height: 400px;
-}
-
-.visitors{
-    background-color: rgb(62, 68, 70); 
-    color: #fff;
+    height: 500px;
     padding: 10px;
-    padding-bottom: 5%;
+    margin: 5%;
 }
 
 footer {
+    font: 1em Impact, Lato;
     background-color: lightcoral;
     font-size: 20px;
     color: white;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
 
+input[type="text"]:required {
+    border: 2px solid red;
+}
+
+@media (max-width: 600px) {
+    .container, .row, .column {
+        width: 100%;
+        display: block;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    header img {
+        max-width: 50px;
+    }
+}
+
+@media (min-width: 601px) {
+   
+
+    .category {
+        display: flex;
+    }
+
+    .category .article {
+        width: 30%; 
+        max-height: 500px; 
+        overflow-y: auto;
+    }
+
+    header img {
+        max-width: 200px;
+    }
 }

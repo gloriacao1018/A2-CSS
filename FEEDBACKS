@@ -1,0 +1,23 @@
+1. File and folder organization:
+
+- Main pages can go in in folder. no need for Website folder
+- I recommend using lowercase names for folder and files 
+    (just a recommendation, 
+    you are not wrong)
+
+2. HTML structure and metadata
+- Add Additional metadata ( lower down in content)
+
+
+3. Usage of appropriate elements, attributes and content
+- Contact info can be a section not div
+- "You use sub-sub-sub headings with no sub-sub heading. 
+   Mind your h1,h2,h3 etc. It's a content hierarchy"
+- <br> is not for layout
+    *Because screen readers may announce <br> tags without any content in them, 
+    it is considered bad practice to use them. Instead, use <p> elements along 
+        with CSS to display the information
+- Each article should be on an article tag
+    - The <article> tag specifies independent, self-contained content.
+        An article should make sense on its own and it should be possible 
+        to distribute it independently from the rest of the site

@@ -14,8 +14,12 @@ header img {
     background-color: #FFBD33; 
     padding: 20px; 
     color: rgb(74, 157, 49);
-    font-family: Lato;
  }
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 16px;
+}
 
 h1 {
     font-family: Impact, Lato;
@@ -34,13 +38,12 @@ h2 {
 
 h3 {
     font-family: Impact, Lato;
-    text-align: right;
     text-decoration:dotted;
     font-size: 20px;
 }
 
-h4 {
-    font-size: 24px;
+.contact.info h3 {
+    text-align: right;
 }
 
 ul {

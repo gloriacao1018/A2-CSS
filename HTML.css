@@ -183,6 +183,10 @@ input[type="text"]:required {
         width: 100%;
     }
 
+    .parent > div {
+        width: 100%;
+    }
+
 
     p {
         font-size: 1.2em; 

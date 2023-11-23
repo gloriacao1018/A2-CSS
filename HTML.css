@@ -4,9 +4,9 @@ header {
     text-decoration:dotted;
     background-color: lightcoral;
     color: darkred;
-    padding: 10px;
     font-size: 24px;
     position: fixed;
+    padding-top: 10px;
     width: 100%;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@ header {
 
 #WELCOME {
     background-color: #FFBD33; 
-    padding: 20px; 
+    padding: 5%; 
     color: rgb(74, 157, 49);
  }
 
@@ -37,7 +37,16 @@ body {
 
 .parent {
     display: flex;
-    width: 90%;
+    width: 100%;
+}
+
+.parent > div {
+    width: 33%;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -78,59 +87,27 @@ ul li {
 }
 
 .featured-article {
-    background-color: #fff;; 
+    background-color: white;; 
     padding: 10px;
     padding-bottom: 5%;
     font-size: larger;
     text-align: center;
 }
 
-.featured-article a {
-    text-decoration: none; 
-    background-color: #333; 
-    color: #fff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    display: inline-block;
-}
-
-.featured-article a:hover {
-    background-color: #555; 
-}
 
 .featured-article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    height: auto;
 }
 
-.parent .industry {
+.Industry, .career, .technical {
     background-color: #fff; 
-    color: #e1cc40; 
+    color: #242222; 
     padding: 10px;
     padding-bottom: 5%;
-    width:30%;
 }
 
-.industry a {
-    text-decoration: none; 
-    background-color: #333; 
-    color: #fff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    display: inline-block;
-}
-
-.career {
-    background-color:#fff; 
-    color: #3c3b3b; 
-    padding: 10px;
-    padding-bottom: 5%;
-    width:30%;
-
-}
-
-.career a {
+.Industry a, .career a, .technical a, .featured-article a {
     text-decoration: none; 
     background-color: #333; 
     color: #fff; 
@@ -144,24 +121,6 @@ ul li {
     color: #fff;
 }
 
-.technical {
-    background-color: #fff; 
-    color: #242222; 
-    padding: 10px;
-    padding-bottom: 5%;
-    width:30%;
-
-}
-
-.technical a {
-    text-decoration: none; 
-    background-color: #333; 
-    color: #fff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    display: inline-block;
-}
-
 .technical .author {
     background-color: #000;
     color: #fff;
@@ -173,6 +132,7 @@ ul li {
     padding: 10px;
     padding-left: 40%;
     padding-bottom: 5%;
+    border: 1px solid #000;
 }
 
 form {
@@ -188,12 +148,17 @@ address {
     color:#fff
 }
 
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
 footer {
     font: 1em Impact, Lato;
     background-color: lightcoral;
     font-size: 20px;
     color: white;
-    padding: 10px;
+    padding-bottom: 10px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -205,36 +170,28 @@ input[type="text"]:required {
     border: 2px solid red;
 }
 
-@media (min-width: 768px) {
-    header {
-        width: 100%;
-    }
+.main-content {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    overflow: auto;
+}
 
-    footer {
-        width: 100%;
-    }
-
-    .featured-article {
-        width: 80%;
-        margin: 0 auto;
-    }
-
+@media (max-width: 600px) {
     .parent {
         flex-direction: column;
         align-items: center;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .parent .industry,
-    .parent .technical,
-    .parent .career {
         width: 100%;
-        margin-bottom: 20px;
     }
 
-    /* Add styles for a big logo */
-    header img {
-        max-width: 100px; /* Adjust the size as needed */
+
+    p {
+        font-size: 1.2em; 
+        line-height: 1.5em; 
     }
+
+    header img {
+        max-width: 30%;
+    }
+    
 }
+
